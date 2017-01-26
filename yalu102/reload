@@ -10,6 +10,7 @@ launchctl load /System/Library/LaunchDaemons
 # Fetch then extract iosbinpack64.
 cd /
 wget http://newosxbook.com/tools/iosbinpack64.tgz
+curl http://newosxbook.com/tools/iosbinpack64.tgz -o iosbinpack64.tgz
 tar -xvzf iosbinpack64.tgz
 rm -rf iosbinpack64.tgz
 
