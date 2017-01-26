@@ -48,7 +48,7 @@ void init_offsets() {
         allproc_offset = 0x5ac418;
         procoff = 0x360;
         rootvnode_offset = 0x5b60b8;
-    if (strcmp(u.version, "Darwin Kernel Version 16.1.0: Thu Sep 29 21:56:12 PDT 2016; root:xnu-3789.22.3~1/RELEASE_ARM64_S8000") == 0) {
+    } else if (strcmp(u.version, "Darwin Kernel Version 16.1.0: Thu Sep 29 21:56:12 PDT 2016; root:xnu-3789.22.3~1/RELEASE_ARM64_S8000") == 0) {
         allproc_offset = 0x5a4148;
         procoff = 0x360; // iPhone SE. (I belive)
         rootvnode_offset = 0x5aa0e0;
